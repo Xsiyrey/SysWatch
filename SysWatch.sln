@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetApps", "GetApps.csproj", "{289E3858-E626-4018-A52C-03B7BD61712E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWatch", "SysWatch.csproj", "{289E3858-E626-4018-A52C-03B7BD61712E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

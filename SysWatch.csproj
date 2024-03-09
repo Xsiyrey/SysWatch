@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <UserSecretsId>dotnet-GetApps-8E4732AD-11C4-4F52-BCA1-4A1F27F3A693</UserSecretsId>
+        <UserSecretsId>dotnet-SysWatch-8E4732AD-11C4-4F52-BCA1-4A1F27F3A693</UserSecretsId>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 

@@ -5,17 +5,17 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["GetApps.csproj", "./"]
-RUN dotnet restore "GetApps.csproj"
+COPY ["SysWatch.csproj", "./"]
+RUN dotnet restore "SysWatch.csproj"
 COPY . .
 WORKDIR "/src/"
-RUN dotnet build "GetApps.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "SysWatch.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "GetApps.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "SysWatch.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "GetApps.dll"]
+ENTRYPOINT ["dotnet", "SysWatch.dll"]

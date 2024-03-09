@@ -1,4 +1,4 @@
-namespace GetApps;
+namespace SysWatch;
 
 public class Worker : BackgroundService
 {
