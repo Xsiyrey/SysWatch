@@ -1,1 +1,1 @@
-# GetApps
+# GetApps service
